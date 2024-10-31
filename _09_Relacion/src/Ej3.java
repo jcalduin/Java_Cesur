@@ -41,7 +41,8 @@ public class Ej3 {
             opcion = sc.next().toLowerCase().charAt(0);
         }
         sc.close();
-        if (sumaTotal < 0) {
+
+        if (sumaTotal > 0) {
         System.out.printf("El precio final aplicado todos los descuentos es: %.2f€",sumaTotal);
         } else {
             System.out.println("No quiere nada, vuelva otro día");
