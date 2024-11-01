@@ -2,57 +2,35 @@ import java.util.Scanner;
 
 public class Ej1 {
     public static void main(String[] args) {
-
+        /*
+        . Escribe un programa en Java que lea 3 datos de entrada A, B y C. Estos
+        corresponden a las dimensiones de los lados de un triángulo. El programa
+        debe determinar qué tipo de triangulo es, teniendo en cuenta los
+        siguiente:
+        • Si se cumple Pitágoras entonces es triángulo rectángulo (a2+b2=c2)
+        • Si solo dos lados del triángulo son iguales entonces es isósceles.
+        • Si los 3 lados son iguales entonces es equilátero.
+        • Si no se cumple ninguna de las condiciones anteriores, es escaleno.
+         */
 
         Scanner sc = new Scanner(System.in);
 
-        double saldoant;
-        double pagomesant;
-        double cantidadpte;
-        double comprasmes;
-        double pagomes;
-        double saldoactual;
-        double deudatotal;
+        System.out.print("Introduce el lado A: ");
+        double a = sc.nextDouble();
+        System.out.print("Introduce el lado B: ");
+        double b = sc.nextDouble();
+        System.out.print("Introduce el lado C: ");
+        double c = sc.nextDouble();
 
-        do {
-            System.out.println("Introduzca el saldo anterior del cliente: ");
-            saldoant = sc.nextDouble();
-        } while (saldoant < 1);
-        do {
-            System.out.println("Pago del mes anterior: ");
-            pagomesant = sc.nextDouble();
-        } while (pagomesant >= saldoant);
-        do {
-            System.out.println("Cantidad pendiente de las compras:");
-            cantidadpte = sc.nextDouble();
-        } while (cantidadpte < 1);
-        do {
-            System.out.println("Gastos realizados este mes:");
-            comprasmes = sc.nextDouble();
-        } while (comprasmes <= 0);
-
-        double pagominimo = (cantidadpte + comprasmes) * 0.15;
-        System.out.printf("El pago mínimo que debe realizar es de: %.2f€\n", pagominimo);
-
-        double pagosininteres = (cantidadpte + comprasmes) * 0.85;
-        System.out.printf("El pago mínimo que debe realizar para que no tenga intereses es de: %.2f€\n", pagosininteres);
-
-        System.out.println("Introduzca el pago que desea realizar este mes:");
-        pagomes = sc.nextDouble();
-
-        deudatotal = (cantidadpte + comprasmes) - pagomes;
-
-        if (pagomes < pagosininteres) {
-            deudatotal *= 1.12;
-            if (pagomes < pagominimo) {
-                deudatotal += 200;
-            }
+        if (Math.pow(a,2)+Math.pow(b,2) == Math.pow(c,2)) {
+            System.out.println("Es un triángulo rectángulo");
+        } else if (a==b && a !=c) {
+            System.out.println("Es un triángulo isósceles");
+        } else if (a==b && a==c) {
+            System.out.println("Es un triángulo equilátero");
+        } else{
+            System.out.println("Es un triángulo escaleno");
         }
-
-        saldoactual = saldoant - (pagomesant + pagomes);
-
-        System.out.printf("Una vez realizado el pago, su saldo actual es de: %.2f€\n", saldoactual);
-        System.out.printf("La cantidad de pago de sus compras es de: %.2f€\n", deudatotal);
+        sc.close();
     }
 }
-

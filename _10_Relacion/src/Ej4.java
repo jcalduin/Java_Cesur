@@ -3,6 +3,14 @@ import java.util.Scanner;
 
 public class Ej4 {
     public static void main(String[] args) {
+        /*
+        Escribir el programa Java para el popular juego de “Piedra, papel o
+        tijera”. El objetivo es vencer al oponente seleccionando el arma que
+        gana, según las siguientes reglas:
+        • La piedra aplasta la tijera. (Gana la piedra.)
+        • La tijera corta el papel. (Gana la tijera.)
+        • El papel envuelve la piedra. (Gana el papel.)
+         */
 
 
         Scanner sc = new Scanner(System.in);
