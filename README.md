@@ -8,5 +8,5 @@
 <p>Ejercicios de iniciación y fundamentos</p>
 <h2>Carpeta 03</h2>
 <p>POO básica</p>
-<h2>Carpeta 03</h2>
+<h2>Carpeta 04</h2>
 <p>POO herencia, polimorfismo,sobreescritura...</p>
