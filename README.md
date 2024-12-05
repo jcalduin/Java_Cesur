@@ -10,3 +10,5 @@
 <p>POO básica</p>
 <h2>Carpeta 04</h2>
 <p>POO herencia, polimorfismo,sobreescritura...</p>
+<h2>Carpeta 05</h2>
+<p>Listas enumeradas y Arrays</p>
