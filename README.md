@@ -12,3 +12,5 @@
 <p>POO herencia, polimorfismo,sobreescritura...</p>
 <h2>Carpeta 05</h2>
 <p>Listas enumeradas y Arrays</p>
+<h2>Carpeta 06</h2>
+<p>Paquetes, static y final</p>
