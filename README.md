@@ -14,3 +14,5 @@
 <p>Listas enumeradas y Arrays</p>
 <h2>Carpeta 06</h2>
 <p>Paquetes, static y final</p>
+<h2>Carpeta 07</h2>
+<p>Excepciones</p>
